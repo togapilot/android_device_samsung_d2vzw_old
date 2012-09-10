@@ -22,15 +22,8 @@
 #
  
 PRODUCT_PACKAGES := \
-    Stk
-
-# KEXEC-specific options
-ifeq ($(USE_KEXEC),1)
-PRODUCT_PACKAGES += \
-    kexec \
-    kexec-boot.zip \
-    hijack.sh
-endif
+   Gallery \
+   Stk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)

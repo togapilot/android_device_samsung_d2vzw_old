@@ -17,6 +17,15 @@
 ## (2) Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/d2vzw/d2vzw-vendor.mk)
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/samsung/d2vzw/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+        $(LOCAL_KERNEL):kernel 
+
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/d2vzw/overlay
 ## common overlays
