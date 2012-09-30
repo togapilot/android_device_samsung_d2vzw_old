@@ -16,4 +16,7 @@ telephony.lteOnCdmaDevice=1
 ro.config.svlte1x=true
 persist.radio.no_wait_for_card=1
 
+# 7 Step Audio
+ro.config.vc_call_vol_steps=7
+
 
