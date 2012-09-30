@@ -25,6 +25,10 @@ PRODUCT_PACKAGES := \
    Gallery \
    Stk
 
+# CDMA APN list
+PRODUCT_COPY_FILES += \	
+    device/samsung/d2vzw/apns-conf-cdma.xml:system/etc/apns-conf.xml
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2vzw device
