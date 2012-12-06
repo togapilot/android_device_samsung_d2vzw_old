@@ -22,3 +22,7 @@ BUILD_DISPLAY_ID=JOP40D \
 BUILD_FINGERPRINT="Verizon/d2vzw/d2vzw:4.2.1/JOP40D/I535VRBLK1:user/release-keys" \
 PRIVATE_BUILD_DESC="d2vzw-user 4.2.1 JOP40D I535VRBLK1 release-keys" \
 BUILD_VERSION_TAGS=dev-keys
+
+# Moar Overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.android.dataroaming=false
