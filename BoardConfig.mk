@@ -29,10 +29,6 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := d2vzw
 
-# bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d2-common/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/d2-common/bluetooth/vnd_d2.txt
-
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/d2
 TARGET_KERNEL_CONFIG := cyanogen_d2vzw_defconfig
