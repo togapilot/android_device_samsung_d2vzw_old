@@ -22,7 +22,6 @@
 #
  
 PRODUCT_PACKAGES := \
-   BAMFLTEWidget \
    Gallery \
    Stk
 
